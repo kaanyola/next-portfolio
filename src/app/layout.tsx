@@ -18,12 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 m-3">
           <h1>
             <Link href="/">Home</Link>
           </h1>
           <h1>
             <Link href="/about">About</Link>
+          </h1>
+          <h1>
+            <Link href="/projects">Projects</Link>
           </h1>
           <h1>
             <Link href="/contact">Contact</Link>
