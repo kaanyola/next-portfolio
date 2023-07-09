@@ -18,19 +18,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex space-x-3 m-3">
-          <h1>
-            <Link href="/">Home</Link>
-          </h1>
-          <h1>
-            <Link href="/about">About</Link>
-          </h1>
-          <h1>
-            <Link href="/projects">Projects</Link>
-          </h1>
-          <h1>
-            <Link href="/contact">Contact</Link>
-          </h1>
+        <div>
+          <nav>
+            <ul className="flex space-x-3">
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
         {children}
       </body>
